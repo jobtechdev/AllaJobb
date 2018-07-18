@@ -1,0 +1,23 @@
+{
+  "name": "allajobb",
+  "version": "1.0.0",
+  "description": "Projektet för att samla alla jobb på ett ställe\r ## Dokumentation för Sök-API\r [Swagger](http://pilot.arbetsformedlingen.se/searchapi/)\r ## Exempelapplikation som använder API:et\r [Webbapplikation](http://pilot.arbetsformedlingen.se/sokjobbet/)",
+  "main": "index.js",
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobtechdev/AllaJobb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobtechdev/AllaJobb/issues"
+  },
+  "homepage": "https://github.com/jobtechdev/AllaJobb#readme"
+}
