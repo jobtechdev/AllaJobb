@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import JSONTest from './JSONData'
 
 class App extends Component {
   render() {
@@ -17,16 +16,23 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>
-          Test
-        </p>
-        <JSONTest/>
+        <JobListing title="Test"/>
+        <JobListing title="Test2"/>
+        <JobListing title="Test3"/>
       </div>
     );
   }
 }
 
 export default App;
+
+function JobListing(props) {
+  return (
+    <div class="Job">
+      <h1>{props.title}</h1>
+    </div>
+  );
+}
 
 function jsonGetAsync(theUrl, success)
 {
@@ -41,7 +47,7 @@ function httpGetAsync(theUrl, callback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
             callback(xmlHttp.responseText);
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
